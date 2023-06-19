@@ -21,7 +21,7 @@
         <p class="Explain">In JavaScript, the "==" operator is used to compare the values of two operands, whereas the "===" operator is used to compare both the values and the data types of the operands.
 
 Here's an example to illustrate the difference:
-<pre class="Explain">let a =5
+<pre class="code">let a =5
     let b= "5"
     console.log(a == b) // true
     console.log(a===b) // false
@@ -58,7 +58,7 @@ Here's an example to illustrate the difference:
         </h2>
             
             <p class="Explain">First-class functions are JavaScript functions that can behave like variables. They can also be parsed as arguments to higher-order functions</p>
-            <pre class="Explain">const Person = {
+            <pre class="code">const Person = {
                 play:(name) => {
                     return `Hey ${name} is playing`;
                 },
@@ -73,6 +73,30 @@ Here's an example to illustrate the difference:
             console.log(Person.play("Chibueze"));
             console.log(Person.dance("Chibueze"));
             console.log(Person.walk("Chibueze"));</pre>
+        </div>
+
+        <div class="container">
+            <h2 class="Question">Q.6	What is Hoisting?</h2>
+                
+                <p class="Explain">JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.</p>
+                <pre class="code">const x = 1;
+                    {
+                      console.log(x); // ReferenceError
+                      const x = 2;
+                    }</pre>
+        </div>
+
+        <div class="container">
+            <h2 class="Question">Q.7	What is Temporal Dead zone</h2>
+                
+                <p class="Explain">A let or const variable is said to be in a "temporal dead zone" (TDZ) from the start of the block until code execution reaches the line where the variable is declared and initialized.</p>
+               
+        </div>
+        <div class="container">
+            <h2 class="Question">Q.7	What are pure functions?</h2>
+                
+                <p class="Explain">A pure function in JavaScript is a function that returns the same result if the same arguments(input) are passed in the function. The return value of the function on the function call should only be dependent on the input function arguments.</p>
+               
         </div>
 
 
